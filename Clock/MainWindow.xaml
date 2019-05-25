@@ -9,7 +9,7 @@
         AllowsTransparency="True"
         Background="Transparent"
         MouseDown="Window_MouseDown"
-        Title="MainWindow" Height="100" Width="445">
+        Title="MainWindow" Height="100" Width="450">
     <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -20,7 +20,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label x:Name="clockLabel" Content="00:00:00 TT" FontSize="80" FontFamily="Calibri" Foreground="GreenYellow"
+        <Label x:Name="clockLabel" Content="00:00:00 TT" FontSize="80" FontFamily="Calibri" Foreground="Tomato"
                Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"
                />
 
