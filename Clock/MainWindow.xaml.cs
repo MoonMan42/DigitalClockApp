@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace Clock
 {
@@ -23,7 +24,12 @@ namespace Clock
         public MainWindow()
         {
             InitializeComponent();
-            clockLabel.Content = DateTime.Now.ToString("HH:mm:ss tt");
+            DispatcherTimer timer = new DispatcherTimer(new TimeSpan(0, 0, 1),
+                DispatcherPriority.Normal, delegate
+                {
+                    clockLabel.Content = DateTime.Now.ToString("hh:mm:ss tt");
+                }, this.Dispatcher);
+            
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
