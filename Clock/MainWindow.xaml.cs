@@ -24,6 +24,7 @@ namespace Clock
         public MainWindow()
         {
             InitializeComponent();
+
             DispatcherTimer timer = new DispatcherTimer(new TimeSpan(0, 0, 1),
                 DispatcherPriority.Normal, delegate
                 {

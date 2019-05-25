@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Clock"
         mc:Ignorable="d"
-        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStyle="none"
         AllowsTransparency="True"
         Background="Transparent"
         MouseDown="Window_MouseDown"
-        Title="MainWindow" Height="100" Width="450">
+        Title="Clock" Height="100" Width="450">
     <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
