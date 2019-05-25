@@ -24,13 +24,19 @@ namespace Clock
         public MainWindow()
         {
             InitializeComponent();
-
+            
             DispatcherTimer timer = new DispatcherTimer(new TimeSpan(0, 0, 1),
                 DispatcherPriority.Normal, delegate
                 {
                     clockLabel.Content = DateTime.Now.ToString("hh:mm:ss tt");
                 }, this.Dispatcher);
             
+        }
+
+        private void Window_Deactivated(object sender, EventArgs e)
+        {
+            Window window = (Window)sender;
+            window.Topmost = true;
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
