@@ -22,7 +22,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label x:Name="clockLabel" Content="00:00:00 TT" FontSize="80" FontFamily="Calibri" Foreground="#FFEE705A" FontWeight="Bold"
+        <Label x:Name="clockLabel" Content="00:00:00 TT" FontSize="80" FontFamily="Calibri" Foreground="Tomato" FontWeight="Bold"
                Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent"
                />
 
