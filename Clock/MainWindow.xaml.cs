@@ -17,7 +17,7 @@ namespace Clock
             DispatcherTimer timer = new DispatcherTimer(new TimeSpan(0, 0, 1),
                 DispatcherPriority.Normal, delegate
                 {
-                    clockLabel.Content = DateTime.Now.ToString("HH:mm:ss"); // add tt for am and pm 
+                    clockLabel.Content = DateTime.Now.ToString("hh:mm:ss tt"); 
                 }, this.Dispatcher);
 
         }
