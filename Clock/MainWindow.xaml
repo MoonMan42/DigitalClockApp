@@ -22,9 +22,25 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label x:Name="clockLabel" Content="00:00:00 TT" FontSize="80" FontFamily="Calibri" Foreground="Tomato" FontWeight="Bold"
-               Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent"
-               />
-
+      <Label x:Name="clockLabel" Content="00:00:00 TT" FontSize="80" FontFamily="Calibri" Foreground="Red" FontWeight="Bold"
+             Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent"
+               >
+        <Label.ContextMenu>
+          <ContextMenu>
+            <MenuItem Header="Format">
+              <MenuItem Header="12-Hour" Click="Set12HrClock"/>
+              <MenuItem Header="24-Hour" Click="Set24HrClock"/>
+            </MenuItem>
+            <MenuItem Header="Color">
+              <MenuItem Header="Red" Click="SetToRed"/>
+              <MenuItem Header="Green" Click="SetToGreen"/>
+              <MenuItem Header="Blue" Click="SetToBlue"/>
+              <MenuItem Header="Pink" Click="SetToPink"/>              
+              <MenuItem Header="Black" Click="SetToBlack"/>
+              <MenuItem Header="White" Click="SetToWhite"/>
+            </MenuItem>
+          </ContextMenu>
+        </Label.ContextMenu>
+      </Label>
     </Grid>
 </Window>
