@@ -43,9 +43,21 @@ namespace Clock
             format = "HH:mm:ss";
         }
 
-        ///Change the color of the clock
-        ///
+        // change clock text size
+        private void SetSizeToSmall(object sender, EventArgs e)
+        {
+            clockLabel.FontSize = 60;
+        }
+        private void SetSizeToMedium(object sender, EventArgs e)
+        {
+            clockLabel.FontSize = 80;
+        }
+        private void SetSizeToLarge(object sender, EventArgs e)
+        {
+            clockLabel.FontSize = 100;
+        }
 
+        ///Change the color of the clock
         private void SetToRed(object sender, EventArgs e)
         {
             clockLabel.Foreground = Brushes.Red;

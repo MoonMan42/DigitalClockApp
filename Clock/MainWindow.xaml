@@ -11,7 +11,7 @@
         Topmost="True" 
         Background="Transparent"
         MouseDown="Window_MouseDown"        
-        Title="Clock" Height="100" Width="450">
+        Title="Clock" Height="150" Width="650">
     <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -30,6 +30,11 @@
             <MenuItem Header="Format">
               <MenuItem Header="12-Hour" Click="Set12HrClock"/>
               <MenuItem Header="24-Hour" Click="Set24HrClock"/>
+            </MenuItem>
+            <MenuItem Header="Size">
+              <MenuItem Header="Small" Click="SetSizeToSmall" />
+              <MenuItem Header="Medium" Click="SetSizeToMedium" />
+              <MenuItem Header="Large" Click="SetSizeToLarge" />
             </MenuItem>
             <MenuItem Header="Color">
               <MenuItem Header="Red" Click="SetToRed"/>
