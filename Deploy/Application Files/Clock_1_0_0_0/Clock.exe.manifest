@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Clock.exe" version="1.0.0.0" publicKeyToken="781f5687e372ca40" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="alarm__02_aaz_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Clock" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Clock.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Clock.exe" size="21408">
+      <assemblyIdentity name="Clock" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BwZrwKwnmbrEQmRaGHYVjUB0ie97UsR9AdFLnXbnt/o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="alarm__02_aaz_icon.ico" size="4286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Zw1RlYMdgzCiJ7j2Ofx66B9uWOZxZ3B0f3l8gAYOAUA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Clock.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=NGHS\45136" issuerKeyHash="f43ca9348a7f93527795e772f6c89b1f623807cb" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>j9EZJYJwUWmQ0NvR8dkfkO9ZHWx1qmaCEPIWO8EaUIA=</DigestValue></Reference></SignedInfo><SignatureValue>VJrNpuLKoDyf4AIO+k8HQWUzcOq7e6dUsZl0Em0sdCU8a8WO+F7yuSoxmkFyqjBf3JMfDI1u7/aRhAfgGXaQEmQSSCPmzcnvduMSPcZULPUejpbixWer80k3riBgdrW6R9qrj4gJP8yQIS6OLn6+kB96I4ZO/si0VZcDvouA27Y=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>ySZTZTsTTPwXxV914TwNH0W+eilTBD6pjeQLIwgkUvFf9fKkbwMO6PwPoTSzg62/jzZHpiin7aANffOhxy2KOd5MwCl9v6uI683cCqzZLM7ooANHmjF+rkQIcKr5TUrr164CgyOJceQX58lVyb9m/SyPVd1RL3j9v/xUIZ0h2nE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="80501ac13b16f2108266aa756c1d59ef901fd9f1d1dbd090695170822519d18f" Description="" Url=""><as:assemblyIdentity name="Clock.exe" version="1.0.0.0" publicKeyToken="781f5687e372ca40" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=NGHS\45136</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>DAgjZ96CbIHeqzxklIwo27SGIgiWB/4rubVe1BLoL/s=</DigestValue></Reference></SignedInfo><SignatureValue>HeyjQ/85/0wLDd3rWs0N9o+F/o9oqDXoEpdcauOAPgPOsfZOHH9sSV3a1Amjy/ZNunWG5gsif1f7uDq9o729thHMnzj8dJ1MNG23zpmJUfDRuNpcNm9C4/1z6ClApvl/06MhMsP0HwFnVcgbeTTIbIYBD7goqPd9xzQ9dXB75gg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>ySZTZTsTTPwXxV914TwNH0W+eilTBD6pjeQLIwgkUvFf9fKkbwMO6PwPoTSzg62/jzZHpiin7aANffOhxy2KOd5MwCl9v6uI683cCqzZLM7ooANHmjF+rkQIcKr5TUrr164CgyOJceQX58lVyb9m/SyPVd1RL3j9v/xUIZ0h2nE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQNzk1lwkj05JMY1qy7UGFyTANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQATgBHAEgAUwBcADQANQAxADMANjAeFw0xOTA2MDQxNjQwNDhaFw0yMDA2MDMyMjQwNDhaMB8xHTAbBgNVBAMeFABOAEcASABTAFwANAA1ADEAMwA2MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJJlNlOxNM/BfFX3XhPA0fRb56KVMEPqmN5AsjCCRS8V/18qRvAw7o/A+hNLODrb+PNkemKKftoA1986HHLYo53kzAKX2/q4jrzdwKrNkszuigA0eaMX6uRAhwqvlNSuvXrgKDI4lx5BfnyVXJv2b9LI9V3VEveP2//FQhnSHacQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBALqO0kKyS1voYFKDbkt9bCwxQ54uQWxD601/oC6UZqnUtvvULRfgRElOIDZJhtrhMirWXEU5wL5iVQ3wWkB1SUjC6C5l751RdUgnT9CcydBouFgMrVpq+21CdgZqzp7o/gfDpoXh5RZFLeZ2YdIQL4IyRdEMdF0vPMo3BslZpb9T</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

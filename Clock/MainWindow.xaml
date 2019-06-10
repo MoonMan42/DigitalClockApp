@@ -11,7 +11,7 @@
         Topmost="True" 
         Background="Transparent"
         MouseDown="Window_MouseDown"        
-        Title="Clock" Height="150" Width="650">
+        Title="Clock" Height="100" Width="650">
     <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
