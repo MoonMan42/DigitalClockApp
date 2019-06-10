@@ -65,12 +65,12 @@ namespace Clock
 
         private void SetToGreen(object sender, EventArgs e)
         {
-            clockLabel.Foreground = Brushes.Green;
+            clockLabel.Foreground = Brushes.GreenYellow;
         }
 
         private void SetToBlue(object sender, EventArgs e)
         {
-            clockLabel.Foreground = Brushes.Blue;
+            clockLabel.Foreground = Brushes.DeepSkyBlue;
         }
 
         private void SetToPink(object sender, EventArgs e)
